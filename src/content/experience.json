@@ -23,7 +23,7 @@
         "startDate": "2019-03-01",
         "endDate": "2022-05-01",
         "accomplishments": [
-            "Architected and led team of 12 in implementing the migration of Falcon Fraud Manager from on-premise to the cloud by leveraging Docker, Kubernetes, Terraform and Helm.",
+            "Architected and led team of 12 in implementing the migration of [Falcon Fraud Manager](https://www.fico.com/en/products/fico-falcon-fraud-manager) from on-premise to the cloud by leveraging Docker, Kubernetes, Terraform and Helm.",
             "Scoped, designed, and implemented support for Kafka for Falcon, improving scaleability by 700%",
             "Planned and led migration of 17 year-old SVN history to git.",
             "Introduced GitOps and trunk-based development with fully featured CI and CD workflows using Jenkins."
@@ -43,6 +43,18 @@
             "Designed & implemented proprietary low-latency e2e ack (acknowledgement) library in Java.",
             "Migrated all existing microservices to Docker",
             "Implemented proprietary devcontainers spec and scaled to several teams."
+        ]
+    },
+    {
+        "company": {
+            "name": "Freelance",
+            "url": "#"
+        },
+        "title": "Software Engineer",
+        "startDate": "2015-12-01",
+        "endDate": "2017-10-01",
+        "accomplishments": [
+            "Designed, implemented, and deployed custom websites for local small businesses."
         ]
     }
 ]

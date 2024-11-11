@@ -15,7 +15,7 @@ export default function AboutMeSection() {
   }, []);
 
   return (
-    <Section title="About Me">
+    <Section title="About">
       <Row>
         <Column>
           <ProfilePicture src="/ryana.page/profile-picture.jpg" alt="image"/>
