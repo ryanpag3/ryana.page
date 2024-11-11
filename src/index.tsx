@@ -15,10 +15,15 @@ const root = ReactDOM.createRoot(
 const router = createBrowserRouter([
   {
     // GH Pages requires not using /
-    path: "/ryana.page",
+    path: "/",
     element: <HomeScreen/>,
   },
-]);
+  {
+    path: '/ryanpage-resume-2024.pdf'
+  }
+], {
+  basename: '/ryana.page'
+});
 
 root.render(
   <React.StrictMode>

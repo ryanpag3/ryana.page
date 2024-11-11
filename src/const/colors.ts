@@ -10,6 +10,14 @@ export type Theme = {
         primary: string;
         secondary: string;
         accent: string;
+    },
+    button: {
+        primary: {
+            background: string;
+            onHover: string;
+            text: string;
+            textOnHover: string;
+        }
     }
 }
 
@@ -29,6 +37,14 @@ const Colors: Colors = {
             primary: '#fff',
             secondary: '#b6b6b6',
             accent: '#00beae'
+        },
+        button: {
+            primary: {
+                background: '#80b8b4',
+                onHover: '#5d8784',
+                text: '#000000',
+                textOnHover: '#ffffff'
+            }
         }
 
     },
@@ -41,6 +57,14 @@ const Colors: Colors = {
             primary: '#333',
             secondary: '#555',
             accent: '#006675'
+        },
+        button: {
+            primary: {
+                background: '#006675',
+                onHover: '#80b8b4',
+                text: '#fff',
+                textOnHover: '#000000'
+            }
         }
     }
 }

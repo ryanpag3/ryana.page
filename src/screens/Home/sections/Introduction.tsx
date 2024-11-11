@@ -28,9 +28,8 @@ export default function IntroSection() {
   }
 
   const one = <h1>Hi 👋, my name is</h1>
-  const two = <h2 className="big-heading">Ryan A. Page</h2>;
+  const two = <h2 className="big-heading">Ryan Page</h2>;
   const three = <h3>A Lead Software Engineer with <YearsOfExperience>{yearsOfExperience}</YearsOfExperience> years of experience.</h3>;
-
   const items = [one, two, three];
 
   return (
