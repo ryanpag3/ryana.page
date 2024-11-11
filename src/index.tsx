@@ -14,7 +14,8 @@ const root = ReactDOM.createRoot(
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    // GH Pages requires not using /
+    path: "/ryana.page",
     element: <HomeScreen/>,
   },
 ]);
