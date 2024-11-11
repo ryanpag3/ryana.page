@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-import { BiWorld } from "react-icons/bi";
+import styled, { useTheme } from 'styled-components';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { useEffect, useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
@@ -7,6 +6,7 @@ import { TypeAnimation } from 'react-type-animation';
 export default function IntroSection() {
   const [isMounted, setIsMounted] = useState(false);
   const [yearsOfExperience, setYearsOfExperience] = useState(getYearsOfExperience());
+  const theme = useTheme();
 
   useEffect(() => {
     const timeout = setTimeout(() => setIsMounted(true), 0);
@@ -29,26 +29,51 @@ export default function IntroSection() {
     return yearsDiff.toFixed(4);
   }
 
-  const typingAnimationWait = 4000;
+  const waitTime = 2500;
   const one = <TypeAnimation
     sequence={[
-      'console.log("Hello, world! My name is");',
-      typingAnimationWait,
-      'print("Hello, world! My name is")',
-      typingAnimationWait,
-      'echo "Hello, world! My name is";',
-      typingAnimationWait,
-      'System.out.println("Hello, world! My name is");',
-      typingAnimationWait,
-      'printf("Hello, world! My name is");',
-      typingAnimationWait,
-      'puts "Hello, world! My name is";',
-      typingAnimationWait,
-      'std::cout << "Hello, world! My name is";'
-    ]}
+      "print('Hello world! My name is:')",  // Python
+      waitTime,
+      "console.log('Hello world! My name is:')",  // JavaScript
+      waitTime,
+      "System.out.println('Hello world! My name is:');",  // Java
+      waitTime,
+      "printf('Hello world! My name is:\\n');",  // C
+      waitTime,
+      "std::cout << 'Hello world! My name is:' << std::endl;",  // C++
+      waitTime,
+      "puts 'Hello world! My name is:'",  // Ruby
+      waitTime,
+      "echo 'Hello world! My name is:';",  // PHP
+      waitTime,
+      "print('Hello world! My name is:')",  // Swift
+      waitTime,
+      "println('Hello world! My name is:')",  // Kotlin
+      waitTime,
+      "cat('Hello world! My name is:\\n')",  // R
+      waitTime,
+      "fmt.Println('Hello world! My name is:')",  // Go
+      waitTime,
+      "Write-Output 'Hello world! My name is:'",  // PowerShell
+      waitTime,
+      "(display 'Hello world! My name is:')",  // Lisp
+      waitTime,
+      "echo('Hello world! My name is:');",  // Lua
+      waitTime,
+      "displayln(\"Hello world! My name is:\")",  // Racket
+      waitTime,
+      "Console.WriteLine('Hello world! My name is:');",  // C#
+      waitTime,
+      "IO.puts('Hello world! My name is:')",  // Elixir
+      waitTime,
+      "trace('Hello world! My name is:')",  // ActionScript
+      waitTime,
+      "PRINT 'Hello world! My name is:'",  // BASIC
+      waitTime
+  ]}
     wrapper="span"
-    speed={10}
-    style={{ fontSize: '2em', display: 'inline-block', fontFamily: 'var(--font-mono)' }}
+    speed={70}
+    style={{ fontSize: '1.25em', display: 'inline-block', fontFamily: 'var(--font-mono)', color: theme.text.accent }}
     repeat={Infinity}
   />
   const two = <h2 className="big-heading">Ryan Page</h2>;
