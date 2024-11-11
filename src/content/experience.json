@@ -1,0 +1,48 @@
+[
+    {
+        "company": {
+            "name": "FICO",
+            "url": "https://www.fico.com"
+        },
+        "title": "Lead Software Engineer",
+        "startDate": "2022-05-01",
+        "endDate": null,
+        "accomplishments": [
+            "Designed and led implementation of decoupled Authorization capability for the FICO Platform using OpenPolicyAgent (OPA) for RBAC and ABAC, scaling to billions of protected resources with under 1ms of latency.",
+            "Designed and implemented Helm Chart for IAM Authorization deployment, scaled to tens of thousands of transactions per second for authoring authorization data.",
+            "Authored and defended Architectural Decision Record (ADR) to define a strategy of consumption for secrets and keys across the entire Platform.",
+            "Authored and defended ADR on defining and scoping a policy engine for control plane resources across the entire Platform."
+        ]
+    },
+    {
+        "company": {
+            "name": "FICO",
+            "url": "https://www.fico.com"
+        },
+        "title": "Software Engineer II",
+        "startDate": "2019-03-01",
+        "endDate": "2022-05-01",
+        "accomplishments": [
+            "Architected and led team of 12 in implementing the migration of Falcon Fraud Manager from on-premise to the cloud by leveraging Docker, Kubernetes, Terraform and Helm.",
+            "Scoped, designed, and implemented support for Kafka for Falcon, improving scaleability by 700%",
+            "Planned and led migration of 17 year-old SVN history to git.",
+            "Introduced GitOps and trunk-based development with fully featured CI and CD workflows using Jenkins."
+        ]
+    },
+    {
+        "company": {
+            "name": "Perspectium",
+            "url": "https://www.perspectium.com"
+        },
+        "title": "Software Engineer",
+        "startDate": "2017-10-01",
+        "endDate": "2019-03-01",
+        "accomplishments": [
+            "Led the migration of thousands of lines of Javascript to Typescript.",
+            "Led a team of 4 in designing and launching an app on the Atlassian marketplace.",
+            "Designed & implemented proprietary low-latency e2e ack (acknowledgement) library in Java.",
+            "Migrated all existing microservices to Docker",
+            "Implemented proprietary devcontainers spec and scaled to several teams."
+        ]
+    }
+]

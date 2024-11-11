@@ -16,7 +16,7 @@ export default function IntroSection() {
   useEffect(() => {
     const i = setInterval(() => {
       setYearsOfExperience(getYearsOfExperience());
-    }, 5000);
+    }, 50);
     return () => clearInterval(i);
   }, []);
 
@@ -26,12 +26,14 @@ export default function IntroSection() {
     const diffInMs = currentDate.getTime() - givenDate.getTime();
     const msInAYear = 1000 * 60 * 60 * 24 * 365.25;
     const yearsDiff = diffInMs / msInAYear;
-    return yearsDiff.toFixed(4);
+    return yearsDiff.toFixed(8);
   }
 
-  const waitTime = 2500;
+  const waitTime = 1500;
   const one = <TypeAnimation
     sequence={[
+      "Hello world! My name is:",
+      3000,
       "print('Hello world! My name is:')",  // Python
       waitTime,
       "console.log('Hello world! My name is:')",  // JavaScript
@@ -77,7 +79,7 @@ export default function IntroSection() {
     repeat={Infinity}
   />
   const two = <h2 className="big-heading">Ryan Page</h2>;
-  const three = <h3>A Lead Software Engineer with <YearsOfExperience>{yearsOfExperience}</YearsOfExperience> years of experience.</h3>;
+  const three = <h3>A Lead Software Engineer with <YoEContainer><FlexCenter><YearsOfExperience>{yearsOfExperience}</YearsOfExperience></FlexCenter></YoEContainer> years of experience.</h3>;
   const items = [one, two, three];
 
   return (
@@ -118,18 +120,33 @@ const Section = styled.section`
       }
     }
 
+    h2 {
+      font-size: clamp(60px, 8vw, 90px);
+    }
+
     h3 {
       margin-top: 5px;
       color: ${({ theme }) => theme.text.secondary};
       line-height: 0.95;
-      font-size: clamp(32px, 5vw, 54px);
-      max-width: 750px;
+      font-size: clamp(32px, 5vw, 48px);
+      max-width: 800px;
     }
 
     p {
       margin: 20px 0 0;
       max-width: 540px;
     }
+`;
+
+const YoEContainer = styled.div`
+  display: inline-block;
+  width: 280px;
+`;
+
+const FlexCenter = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
 `;
 
 const YearsOfExperience = styled.span`

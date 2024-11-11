@@ -1,7 +1,9 @@
+import Section from '../../../components/Section';
+
 export default function Projects() {
     return (
-        <div>
-            <h1>Projects Section</h1>
-        </div>
+        <Section title="Projects">
+            null
+        </Section>
     );
 }
