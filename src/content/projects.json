@@ -1,0 +1,97 @@
+[
+    {
+        "name": "My Website",
+        "githubUrl": "https://github.com/ryanpag3/ryana.page",
+        "status": "active",
+        "description": "My personal website, built with React.",
+        "technologies": [
+            "React.js",
+            "Typescript",
+            "Styled Components"
+        ]
+    },
+    {
+        "name": "Rosco",
+        "githubUrl": "https://github.com/ryanpag3/rosco",
+        "status": "archived",
+        "description": "A feature-rich multi-purpose Discord bot orchestrated in Kubernetes.",
+        "technologies": [
+            "Typescript",
+            "Node.js",
+            "Discord.js",
+            "React.js",
+            "wikijs",
+            "Kubernetes",
+            "Helm"
+        ]
+    },
+    {
+        "name": "speedtest-to-discord",
+        "githubUrl": "https://github.com/ryanpag3/speedtest-to-discord",
+        "status": "active",
+        "description": "A simple bot that runs internet speed tests and reports them to a Discord channel.",
+        "technologies": [
+            "Typescript",
+            "Node.js",
+            "Docker",
+            "Speedtest.net API",
+            "Discord.js"
+        ]
+    },
+    {
+        "name": "home-garden-arduino",
+        "githubUrl": "https://github.com/ryanpag3/home-garden-arduino",
+        "status": "active",
+        "description": "An IoT project that monitors soil moisture and temperature in my home garden.",
+        "technologies": [
+            "Typescript",
+            "Node.js",
+            "Arduino",
+            "Docker",
+            "Grafana"
+        ]
+    },
+    {
+        "name": "Playlistory",
+        "githubUrl": "https://github.com/ryanpag3/playlistory",
+        "status": "archived",
+        "description": "SaaS application for syncing and sharing music playlists across multiple streaming services.",
+        "technologies": [
+            "React.js",
+            "Typescript",
+            "Node.js",
+            "Express.js",
+            "PostgreSQL",
+            "Docker",
+            "Kubernetes",
+            "Helm"
+        ]
+    },
+    {
+        "name": "GoLive Light",
+        "githubUrl": "https://github.com/ryanpag3/twitch-golive-light",
+        "status": "active",
+        "description": "IoT application that lights up a Philips Hue lightbulb when a Twitch streamer goes online.",
+        "technologies": [
+            "Typescript",
+            "Node.js",
+            "Docker",
+            "Twitch API",
+            "Philips Hue API"
+        ]
+    },
+    {
+        "name": "spotifier",
+        "githubUrl": "https://github.com/ryanpag3/spotifier",
+        "status": "archived",
+        "description": "A SaaS application that notifies users when new songs are added from their favorite artists.",
+        "technologies": [
+            "Javascript",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Redis",
+            "Docker"
+        ]
+    }
+]
