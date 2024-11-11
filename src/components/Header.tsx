@@ -1,9 +1,10 @@
-import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import SocialsBar from './SocialsBar';
 
 export default function Header() {
   return (
     <Container>
+      <SocialsBar /> {/* position absolute */}
       <EmptySpace />
       <ResumeButton
         href='/ryana.page/ryanpage-resume-2024.pdf'

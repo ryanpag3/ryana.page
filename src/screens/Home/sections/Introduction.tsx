@@ -1,6 +1,8 @@
 import styled from 'styled-components';
+import { BiWorld } from "react-icons/bi";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { useEffect, useState } from 'react';
+import { TypeAnimation } from 'react-type-animation';
 
 export default function IntroSection() {
   const [isMounted, setIsMounted] = useState(false);
@@ -27,7 +29,28 @@ export default function IntroSection() {
     return yearsDiff.toFixed(4);
   }
 
-  const one = <h1>Hi 👋, my name is</h1>
+  const typingAnimationWait = 4000;
+  const one = <TypeAnimation
+    sequence={[
+      'console.log("Hello, world! My name is");',
+      typingAnimationWait,
+      'print("Hello, world! My name is")',
+      typingAnimationWait,
+      'echo "Hello, world! My name is";',
+      typingAnimationWait,
+      'System.out.println("Hello, world! My name is");',
+      typingAnimationWait,
+      'printf("Hello, world! My name is");',
+      typingAnimationWait,
+      'puts "Hello, world! My name is";',
+      typingAnimationWait,
+      'std::cout << "Hello, world! My name is";'
+    ]}
+    wrapper="span"
+    speed={10}
+    style={{ fontSize: '2em', display: 'inline-block', fontFamily: 'var(--font-mono)' }}
+    repeat={Infinity}
+  />
   const two = <h2 className="big-heading">Ryan Page</h2>;
   const three = <h3>A Lead Software Engineer with <YearsOfExperience>{yearsOfExperience}</YearsOfExperience> years of experience.</h3>;
   const items = [one, two, three];

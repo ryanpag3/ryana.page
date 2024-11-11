@@ -1,5 +1,6 @@
 import Header from '../../components/Header';
 import Screen from '../../components/Screen';
+import SocialsBar from '../../components/SocialsBar';
 import AboutMe from './sections/AboutMe';
 import GetInTouch from './sections/GetInTouch';
 import Introduction from './sections/Introduction';
@@ -10,7 +11,7 @@ import WorkExperience from './sections/WorkExperience';
 export default function HomeScreen() {
   return (
     <Screen>
-      <Header/>
+      <Header />
       <Introduction />
       <AboutMe />
       <WorkExperience />
