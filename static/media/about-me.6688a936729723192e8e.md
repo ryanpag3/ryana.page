@@ -1,0 +1,3 @@
+Hi friends! My name is Ryan Page and I have been a Software Engineer ever since graduating in 2015 from [Cal Poly San Luis Obispo](https://www.calpoly.edu/). While I consider myself a [T-shaped Engineer](https://en.wikipedia.org/wiki/T-shaped_skills) specializing in high-throughput and low-latency back-end services in the cloud, I got into this industry with the goal of being able to design, implement, and launch products all by myself, and so I have also found a love for UI and design. 
+
+Nearly a decade later, and I have launched more products than I can remember. It's been a wild journey, with a lot of lessons learned and growth. Every day I wake up wondering when work is going feel like work, and as Arya Stark once said, that day is *not today*.
