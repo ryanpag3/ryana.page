@@ -30,6 +30,9 @@ export default function JobExperience({ job }: { job: Job }) {
           components={{
             li: ({ node, ...props }) => {
               return <li style={{paddingBottom: '10px'}}>{props.children}</li>;
+            },
+            a: ({ node, ...props }) => {
+              return <Anchor {...props} target="_blank" rel="noopener noreferrer" />;
             }
           }}
         >
@@ -110,4 +113,10 @@ const CompanyName = styled.a`
   @media (max-width: 768px) {
     font-size: 16px;
   }
+`;
+
+const Anchor = styled.a`
+  color: ${({ theme }) => theme.anchor};
+  font-weight: 500;
+  text-decoration: none;
 `;

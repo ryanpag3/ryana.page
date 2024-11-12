@@ -18,7 +18,8 @@ export type Theme = {
             text: string;
             textOnHover: string;
         }
-    }
+    },
+    anchor: string;
 }
 
 type Colors = {
@@ -45,8 +46,8 @@ const Colors: Colors = {
                 text: '#000000',
                 textOnHover: '#ffffff'
             }
-        }
-
+        },
+        anchor: '#309ce0'
     },
     light: {
         background: {
@@ -65,7 +66,8 @@ const Colors: Colors = {
                 text: '#fff',
                 textOnHover: '#000000'
             }
-        }
+        },
+        anchor: '#006675'
     }
 }
 
