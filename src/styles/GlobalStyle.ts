@@ -28,6 +28,23 @@ const GlobalStyle = createGlobalStyle`
       /* grid-template-columns: 100%; */
   }
 
+  /* Scrollbar Styles */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: ${({ theme }) => theme.text.secondary} ${({ theme }) => theme.background.primary};
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    background: ${({ theme }) => theme.background.primary};
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.text.secondary};
+    border: 3px solid ${({ theme }) => theme.background.primary};
+    border-radius: 10px;
+  }
+
   h1,
   h2,
   h3,
