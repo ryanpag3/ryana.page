@@ -7,6 +7,7 @@ import Introduction from './sections/Introduction';
 import Projects from './sections/Projects';
 import WorkExperience from './sections/WorkExperience';
 import Footer from '../../components/Footer';
+import { useRef } from 'react';
 
 
 export default function HomeScreen() {

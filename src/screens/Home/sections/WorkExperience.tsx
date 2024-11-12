@@ -4,7 +4,7 @@ import Experience from '../../../content/experience.json';
 
 export default function WorkExperienceSection() {
     return (
-        <Section title="Experience">
+        <Section id="work-experience" title="Experience">
             {Experience.map((job, index) => (
                 <JobExperience key={index} job={job as any} />
             ))}

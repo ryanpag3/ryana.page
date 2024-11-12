@@ -3,7 +3,7 @@ import SectionTitle from './SectionTitle';
 import { useEffect, useRef } from 'react';
 import ScrollReveal from 'scrollreveal';
 
-export default function Section({ title, children }: { title: string, children: React.ReactNode }) {
+export default function Section({ id, title, children }: { id: string, title: string, children: React.ReactNode }) {
     const sectionRef = useRef<HTMLElement>(null);
 
     useEffect(() => {
@@ -16,7 +16,7 @@ export default function Section({ title, children }: { title: string, children: 
     }, []);
 
     return (
-        <Container ref={sectionRef}>
+        <Container id={id} ref={sectionRef}>
             <SectionTitle title={title} />
             {children}
         </Container>

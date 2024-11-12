@@ -83,7 +83,7 @@ const Description = styled.p`
 `;
 
 const BadgeRow = styled(Row)`
-  max-width: 400px;
+  max-width: 300px;
   flex-wrap: wrap;
 `;
 
@@ -97,7 +97,7 @@ const TechBadge = styled.div`
 `;
 
 const TechBadgeText = styled.span`
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 11px;
+  font-weight: 600;
   text-transform: uppercase;
 `;

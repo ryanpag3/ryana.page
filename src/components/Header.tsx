@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 import SocialsBar from './SocialsBar';
+import NavMenu from './NavMenu';
 
 export default function Header() {
   return (
     <Container>
       <SocialsBar /> {/* position absolute */}
       <EmptySpace />
+      <NavMenu/>
       <ResumeButton
         href='/ryana.page/ryanpage-resume-2024.pdf'
       >Resume</ResumeButton>

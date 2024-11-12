@@ -4,7 +4,7 @@ import ProjectsList from '../../../content/projects.json';
 
 export default function Projects() {
   return (
-    <Section title="Projects">
+    <Section id="projects" title="Projects">
       {
         ProjectsList.map((project, index) => <Project key={index} project={project as any} />)
       }
