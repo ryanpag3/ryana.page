@@ -49,6 +49,7 @@ const Column = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 18px;
 `;
 
 const Link = styled.a`
