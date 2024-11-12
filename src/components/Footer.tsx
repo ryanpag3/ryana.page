@@ -10,7 +10,7 @@ export default function Footer() {
 
 const DisclaimerContainer = styled.div`
   display: flex;
-
+  padding-bottom: 20px;
 `;
 
 const Disclaimer = styled.p`
