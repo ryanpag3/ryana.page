@@ -26,7 +26,13 @@ export default function JobExperience({ job }: { job: Job }) {
         </JobContainer>
       </Header>
       <ContentColumn>
-        <Markdown>
+        <Markdown
+          components={{
+            li: ({ node, ...props }) => {
+              return <li style={{paddingBottom: '10px'}}>{props.children}</li>;
+            }
+          }}
+        >
           {job.accomplishments.map((accomplishment, index) => (
             `- ${accomplishment}\n`
           )).join('')}
@@ -76,7 +82,7 @@ const ContentColumn = styled.div`
   line-height: 1.3;
 
   @media (max-width: 768px) {
-    font-size: 14px;
+    font-size: 15px;
   }
 `;
 
