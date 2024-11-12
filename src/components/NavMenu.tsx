@@ -16,7 +16,7 @@ export default function NavMenu() {
       <MenuItem onClick={() => scrollIntoView("about-me")}>About Me</MenuItem>
       <MenuItem onClick={() => scrollIntoView("work-experience")}>Experience</MenuItem>
       <MenuItem onClick={() => scrollIntoView("projects")}>Projects</MenuItem>
-      <MenuItem><ResumeAnchor href='/ryana.page/ryanpage-resume-2024.pdf'>Resume</ResumeAnchor></MenuItem>
+      <MenuItem><ResumeAnchor href='/ryanpage-resume-2024.pdf'>Resume</ResumeAnchor></MenuItem>
     </Menu> : null
   );
 }
