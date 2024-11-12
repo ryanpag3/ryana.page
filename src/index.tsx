@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import Colors from './const/colors';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
 import HomeScreen from './screens/Home';
 import GlobalStyle from './styles/GlobalStyle';
