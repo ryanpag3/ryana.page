@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { TbMenu2 } from "react-icons/tb";
 import { FaChevronDown } from "react-icons/fa";
+import SocialsBarMobile from '../../../components/SocialsBarMobile';
 
 
 
@@ -85,8 +86,8 @@ export default function IntroSection() {
   />
   const two = <h2 className="big-heading">Ryan Page</h2>;
   const three = <h3>A Lead Software Engineer with <YoEContainer><FlexCenter><YearsOfExperience>{yearsOfExperience}</YearsOfExperience></FlexCenter></YoEContainer> years of experience.</h3>;
-  
-  const items = [one, two, three];
+  const four = <SocialBarsContainer><SocialsBarMobile/></SocialBarsContainer>
+  const items = width > 768 ? [one, two, three] : [one, two, three, four];
 
   return (
     <Section>
@@ -152,6 +153,7 @@ const Section = styled.section`
 
       h3 {
         font-size: 22px;
+        line-height: 1.3;
       }
     }
 
@@ -185,4 +187,11 @@ const Chevron = styled(FaChevronDown)`
   position: absolute;
   bottom: 0;
   left: 45%;
+`;
+
+const SocialBarsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-left: 10px;
 `;
