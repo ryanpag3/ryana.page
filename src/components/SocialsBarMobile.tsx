@@ -1,6 +1,6 @@
-import styled from 'styled-components';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import { RiBlueskyLine } from "react-icons/ri";
+import styled from 'styled-components';
 
 
 export default function SocialsBarMobile() {

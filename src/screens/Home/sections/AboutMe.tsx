@@ -17,7 +17,7 @@ export default function AboutMeSection() {
     <Section id="about-me" title="About">
       <Row>
         <Column>
-          <ProfilePicture src="/profile-picture.jpg" alt="image"/>
+          <ProfilePicture src="/profile-picture.jpg" alt="image" />
         </Column>
         <Column>
           <Markdown

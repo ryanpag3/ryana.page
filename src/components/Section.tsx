@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import SectionTitle from './SectionTitle';
 import { useEffect, useRef } from 'react';
 import ScrollReveal from 'scrollreveal';
+import styled from 'styled-components';
+import SectionTitle from './SectionTitle';
 
 export default function Section({ id, title, children }: { id: string, title: string, children: React.ReactNode }) {
     const sectionRef = useRef<HTMLElement>(null);
@@ -11,7 +11,7 @@ export default function Section({ id, title, children }: { id: string, title: st
             ScrollReveal().reveal(sectionRef.current, {
                 duration: 500,
                 delay: 250
-            });            
+            });
         }
     }, []);
 

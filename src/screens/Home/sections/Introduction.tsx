@@ -1,9 +1,8 @@
-import styled, { useTheme } from 'styled-components';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { useEffect, useState } from 'react';
-import { TypeAnimation } from 'react-type-animation';
-import { TbMenu2 } from "react-icons/tb";
 import { FaChevronDown } from "react-icons/fa";
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { TypeAnimation } from 'react-type-animation';
+import styled, { useTheme } from 'styled-components';
 import SocialsBarMobile from '../../../components/SocialsBarMobile';
 
 
@@ -78,7 +77,7 @@ export default function IntroSection() {
       waitTime,
       "PRINT 'Hello world! My name is:'",  // BASIC
       waitTime
-  ]}
+    ]}
     wrapper="span"
     speed={70}
     style={{ fontSize: width < 768 ? '.85em' : '1.5em', display: 'inline-block', fontFamily: 'var(--font-mono)', color: theme.text.accent }}
@@ -86,7 +85,7 @@ export default function IntroSection() {
   />
   const two = <h2 className="big-heading">Ryan Page</h2>;
   const three = <h3>A Lead Software Engineer with <YoEContainer><FlexCenter><YearsOfExperience>{yearsOfExperience}</YearsOfExperience></FlexCenter></YoEContainer> years of experience.</h3>;
-  const four = <SocialBarsContainer><SocialsBarMobile/></SocialBarsContainer>
+  const four = <SocialBarsContainer><SocialsBarMobile /></SocialBarsContainer>
   const items = width > 768 ? [one, two, three] : [one, two, three, four];
 
   return (
@@ -99,8 +98,8 @@ export default function IntroSection() {
         ))}
       </TransitionGroup>
       {
-      width < 768 &&
-      <Chevron size={40} color={theme.text.secondary}/>
+        width < 768 &&
+        <Chevron size={40} color={theme.text.secondary} />
       }
     </Section>
   );

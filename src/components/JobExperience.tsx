@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import Markdown from 'react-markdown';
 import styled from 'styled-components';
 

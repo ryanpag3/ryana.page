@@ -1,4 +1,3 @@
-import { AiFillGithub, AiOutlineGithub } from 'react-icons/ai';
 import { RiGithubLine } from 'react-icons/ri';
 import styled from 'styled-components';
 

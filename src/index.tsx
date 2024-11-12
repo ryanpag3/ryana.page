@@ -13,15 +13,15 @@ const root = ReactDOM.createRoot(
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomeScreen/>,
+    element: <HomeScreen />,
   }
 ]);
 
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={Colors['dark']}>
-      <GlobalStyle/>
-      <RouterProvider router={router}/>
+      <GlobalStyle />
+      <RouterProvider router={router} />
     </ThemeProvider>
   </React.StrictMode>
 );

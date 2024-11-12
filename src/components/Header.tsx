@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import SocialsBar from './SocialsBar';
 import NavMenu from './NavMenu';
+import SocialsBar from './SocialsBar';
 
 export default function Header() {
   return (
