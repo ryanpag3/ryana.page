@@ -17,18 +17,16 @@ export default function IntroSection() {
   useEffect(() => {
     const i = setInterval(() => {
       setYearsOfExperience(getYearsOfExperience());
-    }, 1000);
+    }, 50);
     return () => clearInterval(i);
   }, []);
 
   function getYearsOfExperience() {
-    const givenDate = new Date('12-01-2015');
+    const givenDate = new Date('December 1, 2015');
     const currentDate = new Date();
     const diffInMs = currentDate.getTime() - givenDate.getTime();
-    alert(diffInMs);
     const msInAYear = 1000 * 60 * 60 * 24 * 365.25;
     const yearsDiff = diffInMs / msInAYear;
-    alert(yearsDiff);
     return yearsDiff.toFixed(8);
   }
 
