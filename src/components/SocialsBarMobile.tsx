@@ -8,7 +8,7 @@ export default function SocialsBarMobile() {
 
   return (
     <Container>
-      <HorizLine />
+      <HorizLine style={{width: '15px'}}/>
       <Anchor
         href="https://github.com/ryanpag3"
         target="_blank"
@@ -37,6 +37,7 @@ export default function SocialsBarMobile() {
       >
         <AiOutlineMail size={iconSize} />
       </Anchor>
+      <HorizLine />
     </Container>
   );
 }
@@ -60,5 +61,5 @@ const Anchor = styled.a`
 `;
 
 const HorizLine = styled.hr`
-    width: 80px;
+    width: 60px;
 `;
