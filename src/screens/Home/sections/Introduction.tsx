@@ -17,7 +17,7 @@ export default function IntroSection() {
   useEffect(() => {
     const i = setInterval(() => {
       setYearsOfExperience(getYearsOfExperience());
-    }, 50);
+    }, 1000);
     return () => clearInterval(i);
   }, []);
 
