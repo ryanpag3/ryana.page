@@ -37,20 +37,6 @@ export default function Project({ project }: { project: Project }) {
         }
       </BadgeRow>
     </Container>
-    // <div>
-    //   <h2>{project.name}</h2>
-    //   <p>{project.description}</p>
-    //   <a href={
-    //     project.githubUrl
-    //   }>GitHub</a>
-    //   <ul>
-    //     {
-    //       project.technologies.map((technology, index) => (
-    //         <li key={index}>{technology}</li>
-    //       ))
-    //     }
-    //   </ul>
-    // </div>
   );
 }
 
@@ -80,6 +66,7 @@ const ProjectStatusBadge = styled.div`
   height: 25px;
   align-items: center;
   justify-content: center;
+  color: ${({ theme }) => theme.text.secondary};
 `;
 
 const ProjectName = styled.h2`
@@ -92,7 +79,7 @@ const ProjectName = styled.h2`
 
 
 const Description = styled.p`
-  color: ${({ theme }) => theme.text.secondary};
+  /* color: ${({ theme }) => theme.text.primary}; */
 `;
 
 const BadgeRow = styled(Row)`
@@ -111,6 +98,6 @@ const TechBadge = styled.div`
 
 const TechBadgeText = styled.span`
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 400;
   text-transform: uppercase;
 `;

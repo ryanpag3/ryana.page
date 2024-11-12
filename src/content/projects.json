@@ -3,7 +3,7 @@
         "name": "My Website",
         "githubUrl": "https://github.com/ryanpag3/ryana.page",
         "status": "active",
-        "description": "My personal website, built with React.",
+        "description": "My personal website, built with React and hosted with Github Pages.",
         "technologies": [
             "React.js",
             "Typescript",

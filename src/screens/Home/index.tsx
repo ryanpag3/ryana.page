@@ -1,11 +1,12 @@
+import styled from 'styled-components';
 import Header from '../../components/Header';
 import Screen from '../../components/Screen';
 import SocialsBar from '../../components/SocialsBar';
 import AboutMe from './sections/AboutMe';
-import GetInTouch from './sections/GetInTouch';
 import Introduction from './sections/Introduction';
 import Projects from './sections/Projects';
 import WorkExperience from './sections/WorkExperience';
+import Footer from '../../components/Footer';
 
 
 export default function HomeScreen() {
@@ -16,7 +17,8 @@ export default function HomeScreen() {
       <AboutMe />
       <WorkExperience />
       <Projects />
-      <GetInTouch />
+      <Footer/>
     </Screen>
   );
 }
+
