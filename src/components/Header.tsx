@@ -8,9 +8,9 @@ export default function Header() {
       <SocialsBar /> {/* position absolute */}
       <EmptySpace />
       <NavMenu/>
-      <ResumeButton
+      {/* <ResumeButton
         href='/ryana.page/ryanpage-resume-2024.pdf'
-      >Resume</ResumeButton>
+      >Resume</ResumeButton> */}
     </Container>
   );
 }

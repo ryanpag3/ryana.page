@@ -26,6 +26,7 @@ export default function Section({ id, title, children }: { id: string, title: st
 const Container = styled.section`
   display: flex;
   flex-direction: column;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   margin: 50px 0;
 `;

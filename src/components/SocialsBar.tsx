@@ -4,7 +4,9 @@ import { RiBlueskyLine } from "react-icons/ri";
 
 
 export default function SocialsBar() {
-  const iconSize = 30;
+  const { innerWidth: width, innerHeight: height } = window;
+
+  const iconSize = width > 480 ? 30 : 20;
 
   return (
     <Container>
@@ -51,6 +53,10 @@ const Container = styled.div`
     height: 100%;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 480px) {
+      display: none;
+    };
 `;
 
 const Anchor = styled.a`
@@ -65,4 +71,8 @@ const Anchor = styled.a`
 const VertLine = styled.div`
   border-left: 1px solid ${({ theme }) => theme.text.secondary};
   height: 60px;
+
+  @media (max-width: 480px) {
+    height: 40px;
+  }
 `;

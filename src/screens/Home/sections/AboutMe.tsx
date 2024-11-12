@@ -38,6 +38,10 @@ export default function AboutMeSection() {
 const Row = styled.div`
   display: flex;
   flex-direction: row;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const Column = styled.div`

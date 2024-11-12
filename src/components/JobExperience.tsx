@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import Markdown from 'react-markdown';
 import styled from 'styled-components';
 
@@ -15,14 +16,16 @@ type Job = {
 export default function JobExperience({ job }: { job: Job }) {
   const startDateYear = new Date(job.startDate).getFullYear();
   const endDateYear = job.endDate ? new Date(job.endDate).getFullYear() : "Present";
-  
+
   return (
     <Container>
-      <DateColumn>
+      <Header>
         <DateText>{startDateYear} - {endDateYear}</DateText>
-      </DateColumn>
+        <JobContainer>
+          <JobTitle>{job.title}</JobTitle>&nbsp;|&nbsp;<CompanyName href={job.company.url}>{job.company.name}</CompanyName>
+        </JobContainer>
+      </Header>
       <ContentColumn>
-        <Row><JobTitle>{job.title}</JobTitle>&nbsp;-&nbsp;<CompanyName href={job.company.url}>{job.company.name}</CompanyName></Row>
         <Markdown>
           {job.accomplishments.map((accomplishment, index) => (
             `- ${accomplishment}\n`
@@ -33,20 +36,25 @@ export default function JobExperience({ job }: { job: Job }) {
   );
 }
 
-const Container = styled.div`
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-bottom: 30px;
-
+const Column = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
-const DateColumn = styled.div`
-  flex: .25;
+const Row = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  margin-top: 5px;
+`;
+
+const Header = styled(Row)`
+  width: 100%;
+  align-items: center;
+`;
+
+const Container = styled(Column)`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 `;
 
 const DateText = styled.p`
@@ -54,21 +62,25 @@ const DateText = styled.p`
   font-family: var(--font-mono);
   color: ${({ theme }) => theme.text.secondary};
   padding: 0;
-  margin-top: 5px;
-  margin-right: 25px;
+  padding-right: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 const ContentColumn = styled.div`
-  flex: .75;
   color: ${({ theme }) => theme.text.primary};
   font-size: 18px;
   font-weight: 200;
   line-height: 1.3;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
-const Row = styled.div`
-  display: flex;
-  flex-direction: row;
+const JobContainer = styled(Row)`
   align-items: center;
 `;
 
@@ -76,13 +88,20 @@ const JobTitle = styled.span`
   font-size: 24px;
   font-weight: bold;
   color: ${({ theme }) => theme.text.accent};
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 const CompanyName = styled.a`
   margin: 0;
-  /* line-height: .9; */
   font-size: 28px;
   font-weight: bold;
   color: ${({ theme }) => theme.text.primary};
   text-decoration: none;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;

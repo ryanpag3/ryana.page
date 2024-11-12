@@ -7,6 +7,7 @@ export default function IntroSection() {
   const [isMounted, setIsMounted] = useState(false);
   const [yearsOfExperience, setYearsOfExperience] = useState(getYearsOfExperience());
   const theme = useTheme();
+  const { innerWidth: width, innerHeight: height } = window;
 
   useEffect(() => {
     const timeout = setTimeout(() => setIsMounted(true), 0);
@@ -75,7 +76,7 @@ export default function IntroSection() {
   ]}
     wrapper="span"
     speed={70}
-    style={{ fontSize: '1.25em', display: 'inline-block', fontFamily: 'var(--font-mono)', color: theme.text.accent }}
+    style={{ fontSize: width > 480 ? '1.25em' : '.85em', display: 'inline-block', fontFamily: 'var(--font-mono)', color: theme.text.accent }}
     repeat={Infinity}
   />
   const two = <h2 className="big-heading">Ryan Page</h2>;
@@ -103,21 +104,12 @@ const Section = styled.section`
     align-items: flex-start;
     justify-content: center;
 
-    @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
-      height: auto;
-      padding-top: var(--nav-height);
-    }
-
     h1 {
       margin: 0 0 10px 4px;
       color: ${({ theme }) => theme.text.accent};
       font-family: var(--font-mono);
       font-size: clamp(var(--fz-md), 5vw, var(--fz-lg));
       font-weight: 400;
-
-      @media (max-width: 480px) {
-        margin: 0 0 20px 2px;
-      }
     }
 
     h2 {
@@ -128,7 +120,7 @@ const Section = styled.section`
       margin-top: 5px;
       color: ${({ theme }) => theme.text.secondary};
       line-height: 0.95;
-      font-size: clamp(32px, 5vw, 48px);
+      font-size: 48px;
       max-width: 800px;
     }
 
@@ -136,11 +128,28 @@ const Section = styled.section`
       margin: 20px 0 0;
       max-width: 540px;
     }
+
+    @media(max-width: 768px) {
+      h3 {
+        font-size: 36px;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      h2 {
+        font-size: 48px;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+    }
 `;
 
 const YoEContainer = styled.div`
   display: inline-block;
-  width: 280px;
+  font-family: var(--font-mono);
 `;
 
 const FlexCenter = styled.div`
