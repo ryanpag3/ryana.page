@@ -21,9 +21,7 @@ const router = createBrowserRouter([
   {
     path: '/ryanpage-resume-2024.pdf'
   }
-], {
-  basename: '/ryana.page'
-});
+]);
 
 root.render(
   <React.StrictMode>
