@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.c14be9d4.js",
-    "static/js/453.96cba20d.chunk.js": "/static/js/453.96cba20d.chunk.js",
-    "static/media/about-me.md": "/static/media/about-me.6688a936729723192e8e.md",
-    "index.html": "/index.html",
-    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.c14be9d4.js.map": "/static/js/main.c14be9d4.js.map",
-    "453.96cba20d.chunk.js.map": "/static/js/453.96cba20d.chunk.js.map"
+    "main.css": "/ryana.page/static/css/main.e6c13ad2.css",
+    "main.js": "/ryana.page/static/js/main.eb757515.js",
+    "static/js/453.96cba20d.chunk.js": "/ryana.page/static/js/453.96cba20d.chunk.js",
+    "static/media/about-me.md": "/ryana.page/static/media/about-me.6688a936729723192e8e.md",
+    "index.html": "/ryana.page/index.html",
+    "main.e6c13ad2.css.map": "/ryana.page/static/css/main.e6c13ad2.css.map",
+    "main.eb757515.js.map": "/ryana.page/static/js/main.eb757515.js.map",
+    "453.96cba20d.chunk.js.map": "/ryana.page/static/js/453.96cba20d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.c14be9d4.js"
+    "static/js/main.eb757515.js"
   ]
 }
