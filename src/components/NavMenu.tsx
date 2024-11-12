@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export default function NavMenu() {
+  const { innerWidth } = window;
 
   function scrollIntoView(id: string) {
     const element = document.getElementById(id);
@@ -9,13 +10,13 @@ export default function NavMenu() {
     }
   }
 
-  return (
+  return ( innerWidth > 480 ?
     <Menu>
       <MenuItem onClick={() => scrollIntoView("introduction")}>Introduction</MenuItem>
       <MenuItem onClick={() => scrollIntoView("about-me")}>About Me</MenuItem>
       <MenuItem onClick={() => scrollIntoView("work-experience")}>Experience</MenuItem>
       <MenuItem onClick={() => scrollIntoView("projects")}>Projects</MenuItem>
-    </Menu>
+    </Menu> : null
   );
 }
 

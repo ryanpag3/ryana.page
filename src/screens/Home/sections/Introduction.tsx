@@ -76,7 +76,7 @@ export default function IntroSection() {
   ]}
     wrapper="span"
     speed={70}
-    style={{ fontSize: width > 480 ? '1.25em' : '.85em', display: 'inline-block', fontFamily: 'var(--font-mono)', color: theme.text.accent }}
+    style={{ fontSize: width < 768 ? '.85em' : '1.5em', display: 'inline-block', fontFamily: 'var(--font-mono)', color: theme.text.accent }}
     repeat={Infinity}
   />
   const two = <h2 className="big-heading">Ryan Page</h2>;
@@ -141,6 +141,12 @@ const Section = styled.section`
         font-size: 48px;
       }
 
+      h3 {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 400px) {
       h3 {
         font-size: 18px;
       }
