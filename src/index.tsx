@@ -14,6 +14,9 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeScreen />,
+  },
+  {
+    path: '/ryanpage-resume-2024.pdf'
   }
 ]);
 
