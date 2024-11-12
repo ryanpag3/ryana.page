@@ -1,9 +1,22 @@
 import styled from 'styled-components';
 import SectionTitle from './SectionTitle';
+import { useEffect, useRef } from 'react';
+import ScrollReveal from 'scrollreveal';
 
 export default function Section({ title, children }: { title: string, children: React.ReactNode }) {
+    const sectionRef = useRef<HTMLElement>(null);
+
+    useEffect(() => {
+        if (sectionRef.current) {
+            ScrollReveal().reveal(sectionRef.current, {
+                duration: 500,
+                delay: 250
+            });            
+        }
+    }, []);
+
     return (
-        <Container>
+        <Container ref={sectionRef}>
             <SectionTitle title={title} />
             {children}
         </Container>

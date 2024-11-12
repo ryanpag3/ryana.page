@@ -1,7 +1,6 @@
-import styled from 'styled-components';
-import SectionTitle from '../../../components/SectionTitle';
-import Markdown from 'react-markdown';
 import { useEffect, useState } from 'react';
+import Markdown from 'react-markdown';
+import styled from 'styled-components';
 import Section from '../../../components/Section';
 
 export default function AboutMeSection() {

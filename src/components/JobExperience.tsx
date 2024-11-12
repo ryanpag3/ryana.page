@@ -23,8 +23,6 @@ export default function JobExperience({ job }: { job: Job }) {
       </DateColumn>
       <ContentColumn>
         <Row><JobTitle>{job.title}</JobTitle>&nbsp;-&nbsp;<CompanyName href={job.company.url}>{job.company.name}</CompanyName></Row>
-        {/* <h2>{job.title}</h2>
-        <a href={job.company.url}>{job.company.name}</a> */}
         <Markdown>
           {job.accomplishments.map((accomplishment, index) => (
             `- ${accomplishment}\n`
@@ -77,7 +75,7 @@ const Row = styled.div`
 const JobTitle = styled.span`
   font-size: 24px;
   font-weight: bold;
-  color: ${({ theme }) => theme.text.primary};
+  color: ${({ theme }) => theme.text.accent};
 `;
 
 const CompanyName = styled.a`
@@ -85,6 +83,6 @@ const CompanyName = styled.a`
   /* line-height: .9; */
   font-size: 28px;
   font-weight: bold;
-  color: ${({ theme }) => theme.text.accent};
+  color: ${({ theme }) => theme.text.primary};
   text-decoration: none;
 `;
