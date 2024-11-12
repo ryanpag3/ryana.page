@@ -52,15 +52,9 @@ const Column = styled.div`
 `;
 
 const Link = styled.a`
-  color: green;
+  color: ${({ theme }) => theme.anchor};
   text-decoration: none;
   transition: color 0.2s;
-`;
-
-const Paragraph = styled.p`
-  font-size: 18px;
-  line-height: 1.6;
-  color: ${({ theme }) => theme.text.primary};
 `;
 
 const diameter = 250;
@@ -70,6 +64,5 @@ const ProfilePicture = styled.img`
   border-radius: 20%;
   margin-right: 20px;
   object-fit: cover;
-  /* box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.649); */
   border: 4px solid ${({ theme }) => theme.background.secondary};
 `;
