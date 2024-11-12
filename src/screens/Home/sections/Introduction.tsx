@@ -2,6 +2,10 @@ import styled, { useTheme } from 'styled-components';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { useEffect, useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
+import { TbMenu2 } from "react-icons/tb";
+import { FaChevronDown } from "react-icons/fa";
+
+
 
 export default function IntroSection() {
   const [isMounted, setIsMounted] = useState(false);
@@ -81,6 +85,7 @@ export default function IntroSection() {
   />
   const two = <h2 className="big-heading">Ryan Page</h2>;
   const three = <h3>A Lead Software Engineer with <YoEContainer><FlexCenter><YearsOfExperience>{yearsOfExperience}</YearsOfExperience></FlexCenter></YoEContainer> years of experience.</h3>;
+  
   const items = [one, two, three];
 
   return (
@@ -92,6 +97,10 @@ export default function IntroSection() {
           </CSSTransition>
         ))}
       </TransitionGroup>
+      {
+      width < 768 &&
+      <Chevron size={40} color={theme.text.secondary}/>
+      }
     </Section>
   );
 }
@@ -147,6 +156,8 @@ const Section = styled.section`
     }
 
     @media (max-width: 400px) {
+      min-height: 70vh;
+
       h3 {
         font-size: 18px;
       }
@@ -168,4 +179,10 @@ const YearsOfExperience = styled.span`
   color: ${({ theme }) => theme.text.accent};
   align-items: center;
   align-text: center;
+`;
+
+const Chevron = styled(FaChevronDown)`
+  position: absolute;
+  bottom: 0;
+  left: 45%;
 `;

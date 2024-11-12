@@ -10,12 +10,13 @@ export default function NavMenu() {
     }
   }
 
-  return ( innerWidth > 480 ?
+  return (innerWidth > 480 ?
     <Menu>
       <MenuItem onClick={() => scrollIntoView("introduction")}>Introduction</MenuItem>
       <MenuItem onClick={() => scrollIntoView("about-me")}>About Me</MenuItem>
       <MenuItem onClick={() => scrollIntoView("work-experience")}>Experience</MenuItem>
       <MenuItem onClick={() => scrollIntoView("projects")}>Projects</MenuItem>
+      <MenuItem><ResumeAnchor href='/ryana.page/ryanpage-resume-2024.pdf'>Resume</ResumeAnchor></MenuItem>
     </Menu> : null
   );
 }
@@ -25,7 +26,8 @@ const Menu = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 15px;
-  margin-right: 30px; 
+  margin-right: 30px;
+  margin-top: 10px;
 `;
 
 const MenuItem = styled.button`
@@ -40,5 +42,14 @@ const MenuItem = styled.button`
   &:hover {
     color: ${({ theme }) => theme.text.secondary};
     text-decoration: underline;
+  }
+`;
+
+const ResumeAnchor = styled.a`
+  color: ${({ theme }) => theme.text.primary};
+  text-decoration: none;
+  
+  &:hover {
+    color: ${({ theme }) => theme.text.secondary};
   }
 `;
