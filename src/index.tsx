@@ -14,12 +14,8 @@ const root = ReactDOM.createRoot(
 
 const router = createBrowserRouter([
   {
-    // GH Pages requires not using /
     path: "/",
     element: <HomeScreen/>,
-  },
-  {
-    path: '/ryanpage-resume-2024.pdf'
   }
 ]);
 
