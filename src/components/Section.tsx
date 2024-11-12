@@ -28,4 +28,5 @@ const Container = styled.section`
   flex-direction: column;
   width: 100%;
   max-width: 800px;
+  padding-bottom: 150px;
 `;
