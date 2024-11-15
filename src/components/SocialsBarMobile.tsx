@@ -24,7 +24,7 @@ export default function SocialsBarMobile() {
         <AiFillLinkedin size={iconSize} />
       </Anchor>
       <Anchor
-        href="https://bsky.app/profile/ryanpag3.bsky.social"
+        href="https://bsky.app/profile/ryanpage.bsky.social"
         target="_blank"
         referrerPolicy='no-referrer'
       >
