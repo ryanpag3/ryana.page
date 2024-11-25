@@ -1,6 +1,7 @@
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import { RiBlueskyLine } from "react-icons/ri";
 import styled from 'styled-components';
+import SocialLinks from '../const/social-links';
 
 
 export default function SocialsBar() {
@@ -12,28 +13,28 @@ export default function SocialsBar() {
     <Container>
       <VertLine />
       <Anchor
-        href="https://github.com/ryanpag3"
+        href={SocialLinks.GITHUB}
         target="_blank"
         referrerPolicy='no-referrer'
       >
         <AiFillGithub size={iconSize} />
       </Anchor>
       <Anchor
-        href="https://www.linkedin.com/in/ryanpag3/"
+        href={SocialLinks.LINKEDIN}
         target="_blank"
         referrerPolicy='no-referrer'
       >
         <AiFillLinkedin size={iconSize} />
       </Anchor>
       <Anchor
-        href="https://bsky.app/profile/ryanpage.bsky.social"
+        href={SocialLinks.BLUESKY}
         target="_blank"
         referrerPolicy='no-referrer'
       >
         <RiBlueskyLine size={iconSize} />
       </Anchor>
       <Anchor
-        href="mailto:ryanapage@gmail.com"
+        href={SocialLinks.EMAIL}
         target="_blank"
         referrerPolicy='no-referrer'
       >
