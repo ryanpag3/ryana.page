@@ -84,7 +84,7 @@ export default function IntroSection() {
     repeat={Infinity}
   />
   const two = <h2 className="big-heading">Ryan Page</h2>;
-  const three = <h3>A Lead Software Engineer with <YoEContainer><FlexCenter><YearsOfExperience>{yearsOfExperience}</YearsOfExperience></FlexCenter></YoEContainer> years of experience.</h3>;
+  const three = <h3>A Senior Software Engineer with <YoEContainer><FlexCenter><YearsOfExperience>{yearsOfExperience}</YearsOfExperience></FlexCenter></YoEContainer> years of experience.</h3>;
   const four = <SocialBarsContainer><SocialsBarMobile /></SocialBarsContainer>
   const items = width > 768 ? [one, two, three] : [one, two, three, four];
 
