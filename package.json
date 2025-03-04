@@ -24,7 +24,7 @@
     "react-type-animation": "^3.2.0",
     "scrollreveal": "^4.0.9",
     "styled-components": "^6.1.14",
-    "typescript": "^5.7.2",
+    "typescript": "^5.8.2",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
