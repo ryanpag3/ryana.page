@@ -80,7 +80,7 @@ export default function IntroSection() {
     ]}
     wrapper="span"
     speed={70}
-    style={{ fontSize: width < 768 ? '.85em' : '1.5em', display: 'inline-block', fontFamily: 'var(--font-mono)', color: theme.text.accent }}
+    style={{ fontSize: width < 768 ? '.85em' : '1.5em', display: 'inline-block', fontFamily: 'var(--font-mono)', color: (theme as any).text.accent }}
     repeat={Infinity}
   />
   const two = <h2 className="big-heading">Ryan Page</h2>;
