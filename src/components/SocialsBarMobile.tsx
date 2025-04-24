@@ -54,10 +54,10 @@ const Container = styled.div`
 
 const Anchor = styled.a`
   cursor: pointer;
-  color: ${({ theme }) => theme.text.primary};
+  color: ${({ theme }: any) => theme.text.primary};
 
   &:hover {
-    color: ${({ theme }) => theme.text.accent};
+    color: ${({ theme }: any) => theme.text.accent};
   }
 `;
 

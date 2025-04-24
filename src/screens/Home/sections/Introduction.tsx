@@ -115,7 +115,7 @@ const Section = styled.section`
 
     h1 {
       margin: 0 0 10px 4px;
-      color: ${({ theme }) => theme.text.accent};
+      color: ${({ theme }: any) => theme.text.accent};
       font-family: var(--font-mono);
       font-size: clamp(var(--fz-md), 5vw, var(--fz-lg));
       font-weight: 400;
@@ -127,7 +127,7 @@ const Section = styled.section`
 
     h3 {
       margin-top: 5px;
-      color: ${({ theme }) => theme.text.secondary};
+      color: ${({ theme }: any) => theme.text.secondary};
       line-height: 0.95;
       font-size: 48px;
       max-width: 800px;
@@ -177,7 +177,7 @@ const FlexCenter = styled.div`
 `;
 
 const YearsOfExperience = styled.span`
-  color: ${({ theme }) => theme.text.accent};
+  color: ${({ theme }: any) => theme.text.accent};
   align-items: center;
   align-text: center;
 `;

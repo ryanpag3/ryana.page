@@ -16,6 +16,6 @@ const Container = styled.div`
         font-size: 40px;
         font-family: var(--font-mono);
         font-weight: 600;
-        color: ${({ theme }) => theme.text.secondary};
+        color: ${({ theme }: any) => theme.text.secondary};
     }
 `;

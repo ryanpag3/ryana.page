@@ -54,7 +54,7 @@ const Column = styled.div`
 `;
 
 const Link = styled.a`
-  color: ${({ theme }) => theme.anchor};
+  color: ${({ theme }: any) => theme.anchor};
   text-decoration: none;
   transition: color 0.2s;
 `;
@@ -66,5 +66,5 @@ const ProfilePicture = styled.img`
   border-radius: 20%;
   margin-right: 20px;
   object-fit: cover;
-  border: 4px solid ${({ theme }) => theme.background.secondary};
+  border: 4px solid ${({ theme }: any) => theme.background.secondary};
 `;

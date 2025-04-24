@@ -62,15 +62,15 @@ const Container = styled.div`
 
 const Anchor = styled.a`
   cursor: pointer;
-  color: ${({ theme }) => theme.text.primary};
+  color: ${({ theme }: any) => theme.text.primary};
 
   &:hover {
-    color: ${({ theme }) => theme.text.accent};
+    color: ${({ theme }: any) => theme.text.accent};
   }
 `;
 
 const VertLine = styled.div`
-  border-left: 1px solid ${({ theme }) => theme.text.secondary};
+  border-left: 1px solid ${({ theme }: any) => theme.text.secondary};
   height: 60px;
 
   @media (max-width: 480px) {

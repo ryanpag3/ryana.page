@@ -51,10 +51,10 @@ const Row = styled.div`
 
 const GithubAnchor = styled.a`
   cursor: pointer;
-  color: ${({ theme }) => theme.text.primary};
+  color: ${({ theme }: any) => theme.text.primary};
 
   &:hover {
-    color: ${({ theme }) => theme.text.secondary};
+    color: ${({ theme }: any) => theme.text.secondary};
   }
 `;
 
@@ -65,20 +65,20 @@ const ProjectStatusBadge = styled.div`
   height: 25px;
   align-items: center;
   justify-content: center;
-  color: ${({ theme }) => theme.text.secondary};
+  color: ${({ theme }: any) => theme.text.secondary};
 `;
 
 const ProjectName = styled.h2`
   font-size: 24px;
   font-family: var(--font-mono);
   font-weight: 600;
-  color: ${({ theme }) => theme.text.accent};
+  color: ${({ theme }: any) => theme.text.accent};
   margin-bottom: 5px;
 `;
 
 
 const Description = styled.p`
-  /* color: ${({ theme }) => theme.text.primary}; */
+  /* color: ${({ theme }: any) => theme.text.primary}; */
 `;
 
 const BadgeRow = styled(Row)`

@@ -68,7 +68,7 @@ const Container = styled(Column)`
 const DateText = styled.p`
   font-size: 14px;
   font-family: var(--font-mono);
-  color: ${({ theme }) => theme.text.secondary};
+  color: ${({ theme }: any) => theme.text.secondary};
   padding: 0;
   padding-right: 10px;
 
@@ -78,7 +78,7 @@ const DateText = styled.p`
 `;
 
 const ContentColumn = styled.div`
-  color: ${({ theme }) => theme.text.primary};
+  color: ${({ theme }: any) => theme.text.primary};
   font-size: 18px;
   font-weight: 200;
   line-height: 1.3;
@@ -95,7 +95,7 @@ const JobContainer = styled(Row)`
 const JobTitle = styled.span`
   font-size: 24px;
   font-weight: bold;
-  color: ${({ theme }) => theme.text.accent};
+  color: ${({ theme }: any) => theme.text.accent};
 
   @media (max-width: 768px) {
     font-size: 14px;
@@ -106,7 +106,7 @@ const CompanyName = styled.a`
   margin: 0;
   font-size: 28px;
   font-weight: bold;
-  color: ${({ theme }) => theme.text.primary};
+  color: ${({ theme }: any) => theme.text.primary};
   text-decoration: none;
 
   @media (max-width: 768px) {
@@ -115,7 +115,7 @@ const CompanyName = styled.a`
 `;
 
 const Anchor = styled.a`
-  color: ${({ theme }) => theme.anchor};
+  color: ${({ theme }: any) => theme.anchor};
   font-weight: 500;
   text-decoration: none;
 `;

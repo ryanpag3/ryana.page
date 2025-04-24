@@ -17,8 +17,8 @@ const GlobalStyle = createGlobalStyle`
       width: 100%;
       min-height: 100%;
       overflow-x: hidden;
-      background-color: ${({ theme }) => theme.background.primary};
-      color: ${({ theme }) => theme.text.primary};
+      background-color: ${({ theme }: any) => theme.background.primary};
+      color: ${({ theme }: any) => theme.text.primary};
   }
 
   #root {
@@ -31,17 +31,17 @@ const GlobalStyle = createGlobalStyle`
   /* Scrollbar Styles */
   html {
     scrollbar-width: thin;
-    scrollbar-color: ${({ theme }) => theme.text.secondary} ${({ theme }) => theme.background.primary};
+    scrollbar-color: ${({ theme }: any) => theme.text.secondary} ${({ theme }: any) => theme.background.primary};
   }
   ::-webkit-scrollbar {
     width: 12px;
   }
   ::-webkit-scrollbar-track {
-    background: ${({ theme }) => theme.background.primary};
+    background: ${({ theme }: any) => theme.background.primary};
   }
   ::-webkit-scrollbar-thumb {
-    background-color: ${({ theme }) => theme.text.secondary};
-    border: 3px solid ${({ theme }) => theme.background.primary};
+    background-color: ${({ theme }: any) => theme.text.secondary};
+    border: 3px solid ${({ theme }: any) => theme.background.primary};
     border-radius: 10px;
   }
 

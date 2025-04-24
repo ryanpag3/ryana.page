@@ -31,7 +31,7 @@ const Menu = styled.div`
 `;
 
 const MenuItem = styled.button`
-  color: ${({ theme }) => theme.text.primary};
+  color: ${({ theme }: any) => theme.text.primary};
   font-size: 16px;
   font-weight: 200;
   cursor: pointer;
@@ -40,16 +40,16 @@ const MenuItem = styled.button`
   border: none;
 
   &:hover {
-    color: ${({ theme }) => theme.text.secondary};
+    color: ${({ theme }: any) => theme.text.secondary};
     text-decoration: underline;
   }
 `;
 
 const ResumeAnchor = styled.a`
-  color: ${({ theme }) => theme.text.primary};
+  color: ${({ theme }: any) => theme.text.primary};
   text-decoration: none;
   
   &:hover {
-    color: ${({ theme }) => theme.text.secondary};
+    color: ${({ theme }: any) => theme.text.secondary};
   }
 `;
