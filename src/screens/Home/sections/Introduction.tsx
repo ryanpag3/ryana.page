@@ -99,7 +99,7 @@ export default function IntroSection() {
       </TransitionGroup>
       {
         width < 768 &&
-        <Chevron size={40} color={theme.text.secondary} />
+        <Chevron size={40} color={(theme as any).text.secondary} />
       }
     </Section>
   );
